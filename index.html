@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Rodar Dado</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="index.js" defer></script>
-</head>
-
-<body>
-  <button onclick="rolarDado()">Rodar Dado</button>
-<h1 id="resultado"></h1>
-</body>
-
+  <head>
+    <title>Lista de Compras</title>
+    <meta charset="utf-8" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="mom">
+        <h1>Lista de Compras</h1>
+        <hr>
+        <label>Item: </label>
+        <input id="inputItem" type="text" placeholder="Nome do item">
+        <label>Quantidade: </label>
+        <input id="inputQntd" type="number" min="0.01" value="0.00">
+        <label>Preço: </label>
+        <input id="inputPreco" type="number" min="0.01" value="0.00">
+        <button id="btAdicionar">Adicionar</button>
+        <button id="btLimpar">Limpar</button>
+        <button id="btPreco">Preço</button>
+        <hr>
+    <ul id="lista"></ul>
+     </div>
+    </body>
 </html>
+   
+    
+    
+  
